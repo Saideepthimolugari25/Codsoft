@@ -1,0 +1,15 @@
+import random
+import string
+def generate_password(length=12, UseUpperCase=True, UseDigits=True, UseSpecialChars=True):
+    chars = string.ascii_lowercase
+    if UseUpperCase:
+        chars += string.ascii_uppercase
+    if UseDigits:
+        chars += string.digits
+    if UseSpecialChars:
+        chars += string.punctuation
+    password = ''.join(random.choice(chars) for _ in range(length))
+    return password
+# Example usage
+generated_password = generate_password()
+print("Generated Password:", generated_password)
