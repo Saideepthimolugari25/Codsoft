@@ -1,0 +1,36 @@
+import random
+
+options = ("rock", "paper", "scissors")
+player = None
+computer = random.choice(options)
+
+print("Enter 1 for Rock")
+print("Enter 2 for Paper")
+print("Enter 3 for Scissors")
+
+n = input("Enter any number among 1, 2, 3: ")
+
+if n == "1":
+    player="rock"
+    print("player:",player)
+elif n=="2":
+  player="paper"
+  print("player:",player)
+elif n=="3":
+    player="scissors"
+    print("player:",player)
+else:
+    print("Invalid input")
+
+print("Computer chose", computer)
+
+if player == computer:
+    print("This is a tie")
+elif player == "1" and computer == "scissors":
+    print("You won!")
+elif player == "2" and computer == "rock":
+    print("You won!")
+elif player == "3" and computer == "paper":
+    print("You won!")
+else:
+    print("Computer won")
