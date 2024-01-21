@@ -1,0 +1,32 @@
+print("Select the operation you want to perform")
+print("enter 1 to ADD")
+print("enter 2 to SUB")
+print("enter 3 to MUL")
+print("enter 4 to DIV")
+choice=int(input("Select among the numbers 1,2,3,4:"))
+if choice==1:
+  print("this is add operation")
+  a=int(input("enter the first value:"))
+  b=int(input("enter the second value:"))
+  c=a+b
+  print("The addition is:",c)
+elif choice==2:
+  print("this is Sub operation")
+  a=int(input("enter the first value:"))
+  b=int(input("enter the second value:"))
+  c=a-b
+  print("The addition is:",c)
+elif choice==3:
+  print("this is Mul operation")
+  a=int(input("enter the first value:"))
+  b=int(input("enter the second value:"))
+  c=a*b
+  print("The addition is:",c)
+elif choice==4:
+  print("this is Div operation")
+  a=int(input("enter the first value:"))
+  b=int(input("enter the second value:"))
+  c=a/b
+  print("The addition is:",c)
+else:
+  print("invalid input")
